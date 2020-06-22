@@ -106,10 +106,13 @@ nav {
   height: 100%;
 }
 
+.card-image {
+  overflow: hidden;
+}
+
 .stories .card-image,
 .tips .card-image {
   border-radius: 12px;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +127,13 @@ nav {
 .tips .card-image img {
   width: 100%;
   height: auto;
+}
+.card-image img {
+  transition: all 1s;
+  transform: scale(1);
+}
+.card-image img:hover {
+  transform: scale(1.2) !important;
 }
 .tips {
   padding-top: 0.1em;
@@ -149,4 +159,14 @@ article {
   height: 2px;
   margin: 0;
   padding: 0;
+}
+
+footer ul li {
+  line-height: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .getInTouch .col {
+    text-align: center !important;
+  }
 }

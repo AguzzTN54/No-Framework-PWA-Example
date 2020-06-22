@@ -67,6 +67,7 @@ function loadPage(page) {
         links()
         preload.style.display = 'none'
       } else if (this.status == 404) {
+        document.title = 'Not Found - Minggat Vacation'
         content.innerHTML = `<section class="errorPage center-align">
           <div class="container">
             <h1>404</h1>
@@ -79,6 +80,7 @@ function loadPage(page) {
         preload.style.display = 'none'
         links()
       } else {
+        document.title = 'Terjadi Kesalahan - Minggat Vacation'
         content.innerHTML = `<section class="errorPage center-align">
           <div class="container">
             <h1>Bad Request</h1>

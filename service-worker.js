@@ -1,15 +1,17 @@
-const CACHE_NAME = 'travel-pwa'
-var urlsToCache = [
+const CACHE_NAME = 'Minggat-Vacation'
+const urlsToCache = [
   './',
   './manifest.json',
   './index.html',
   './nav.html',
+  './favicon.ico',
   './css/materialize.min.css',
   './css/style.css',
   './fonts/JelyttaRegular.woff2',
   './js/materialize.min.js',
   './js/nav.js',
   './js/script.js',
+  './icons/icon_512x512.png',
   './icons/apple-touch-icon.png',
   './icons/icon_192x192.png',
   './icons/icon_32x32.png',
