@@ -2,7 +2,7 @@
   "name": "Minggat Vacation",
   "short_name": "Minggat",
   "description": "Temukan Inspirasi Liburan Terbaik",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
