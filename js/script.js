@@ -33,7 +33,7 @@ function story() {
     storyItem += `<div class="col s6 l3 m4">
     <div class="card z-depth-0">
       <div class="card-image">
-        <img loading="lazy" src="../images/${story.pic}.webp" alt="${story.name}">
+        <img loading="lazy" src="./images/${story.pic}.webp" alt="${story.name}">
         <span class="card-title">${story.name}</span>
       </div>
     </div>
