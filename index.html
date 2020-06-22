@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minggat Vacation</title>
+    <meta name="description" content="My first PWA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="style" href="css/style.css" />
+    <link rel="preload" as="script" href="./js/materialize.min.js" />
+    <link rel="preload" as="script" href="./js/nav.js" />
+    <link rel="preload" as="script" href="./js/script.js" />
+
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header style="margin-bottom: 55px;">
+      <!-- Preload -->
+      <div class="progress white">
+        <div class="indeterminate pink lighten-3"></div>
+      </div>
+      <!-- Navigasi -->
+      <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#home" class="brand-logo link" id="logo-container"
+            >Minggat</a
+          >
+          <button
+            class="sidenav-trigger hide-on-large-only"
+            data-target="nav-mobile"
+          >
+            <span></span>
+          </button>
+
+          <ul class="topnav right hide-on-med-and-down"></ul>
+          <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+      </nav>
+      <!-- Akhir Navigasi -->
+    </header>
+
+    <!-- Content -->
+    <main id="body-content"></main>
+    <!-- Akhir Content -->
+
+    <!-- Footer -->
+    <footer class="page-footer purple darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="jelytta">Minggat Vacation</h5>
+            <p>
+              Liburan jangan dibuat bingung. Temukan inspirasi liburan dan
+              cerita cerita terbaik untukmu. Bagikan juga cerita liburanmu
+              kepada kami, setiap pengalamanmu akan jadi inspirasi bagi traveler
+              yang lain
+            </p>
+          </div>
+          <div class="col l6 offset-12 s12 right-align">
+            <h5>Link</h5>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright purple darken-4">
+        <div class="container">
+          &copy; Made with ❤️ by AguzzTN54
+          <span class="right">
+            Inspired by
+            <a
+              href="http://indonesia.travel"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="pink-text text-lighten-3"
+              >Indonesia.Travel</a
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/script.js" async></script>
+
+    <script>
+      // REGISTER SERVICE WORKER
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker
+            .register('/service-worker.js')
+            .then(function () {
+              console.log('Pendaftaran ServiceWorker berhasil')
+            })
+            .catch(function () {
+              console.log('Pendaftaran ServiceWorker gagal')
+            })
+        })
+      } else {
+        console.log('ServiceWorker belum didukung browser ini.')
+      }
+    </script>
+  </body>
+</html>

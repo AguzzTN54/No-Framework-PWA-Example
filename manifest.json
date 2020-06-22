@@ -1,0 +1,26 @@
+{
+  "name": "Minggat Vacation",
+  "short_name": "Minggat",
+  "description": "Temukan Inspirasi Liburan Terbaik",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon_32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

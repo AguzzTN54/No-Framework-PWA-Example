@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #8e24aa;
+  --secondary-color: #f06292;
+}
+
+@font-face {
+  font-family: 'Jelytta';
+  src: url('../fonts/JelyttaRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.brand-logo,
+.jelytta {
+  font-family: 'Jelytta';
+  font-weight: normal;
+  font-style: normal;
+}
+.brand-logo {
+  color: var(--secondary-color) !important;
+}
+
+.topnav > li > a:hover {
+  background-color: unset;
+  color: var(--secondary-color) !important;
+}
+
+.sidenav-trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 100;
+  margin: 0 15px;
+  border: none;
+  background-color: transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.sidenav-trigger span {
+  width: 30px;
+  height: 3px;
+  display: block;
+  background-color: var(--primary-color);
+  border-radius: 1px;
+  transition: 0.2s;
+}
+.sidenav-trigger span::after {
+  content: '';
+  display: inherit;
+  width: 15px;
+  height: inherit;
+  background-color: inherit;
+  border-radius: 1px;
+  transition: inherit;
+  margin-top: 10px;
+}
+
+/* subscribe */
+.getInTouch {
+  padding: 50px 0;
+  background-image: linear-gradient(to right, #ffa000, #d81b60, #d81b60);
+  background-size: 150%;
+  background-position: center;
+}
+
+/* Picked */
+.picked {
+  margin-top: 50px;
+}
+.picked .col {
+  padding: 0 10px;
+}
+
+.btn {
+  border-radius: 7px;
+}
+
+.errorPage {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/getting-header.webp);
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+.errorPage h1 {
+  font-size: 5em;
+}
+
+.valign-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.stories .card-image,
+.tips .card-image {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stories .card-image {
+  height: 300px;
+}
+.stories .card-image img {
+  height: 100%;
+  width: auto;
+}
+.tips .card-image img {
+  width: 100%;
+  height: auto;
+}
+.tips {
+  padding-top: 0.1em;
+}
+.tips h3,
+.tips article,
+.about h3,
+.tnr {
+  font-family: 'Times New Roman', Times, serif;
+}
+article {
+  font-size: x-large;
+}
+.tips .card-image {
+  height: 200px;
+}
+
+.progress {
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 2px;
+  margin: 0;
+  padding: 0;
+}
