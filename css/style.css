@@ -161,12 +161,20 @@ article {
   padding: 0;
 }
 
-footer ul li {
-  line-height: 2em;
+footer li a {
+  padding: 1.5em 0;
+  margin: 2em 0;
 }
 
 @media screen and (max-width: 600px) {
   .getInTouch .col {
     text-align: center !important;
+  }
+  article {
+    font-size: large;
+  }
+
+  .about h3 {
+    transform: scale(0.8);
   }
 }
